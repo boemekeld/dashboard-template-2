@@ -1,6 +1,9 @@
 import { APIGatewayEvent, Context } from 'aws-lambda';
 import createAPI from 'lambda-api';
 
+console.log('AKI');
+console.error('AKI ERROR');
+
 const api = createAPI();
 
 api.register(require("./src/login"), { prefix: "/login" });
